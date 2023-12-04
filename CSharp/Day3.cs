@@ -48,10 +48,18 @@ namespace CSharp
 					else // Otherwise end number, and maybe add to sum, regardless of symbol or dot
 					{
 						if (currNumValid)
-							partSum += int.Parse(new string(currNumber.ToArray()));
+						{
+							partSum += int.Parse(currNumber.ToArray());
+							Console.WriteLine($"ValidNum: {new string(currNumber.ToArray())}");
+						}
 						currNumValid = false;
 						currNumber = new();
 					}
+				}
+				if (currNumValid)
+				{
+					partSum += int.Parse(currNumber.ToArray());
+					Console.WriteLine($"ValidNum: {new string(currNumber.ToArray())}");
 				}
 			}
 
@@ -60,7 +68,7 @@ namespace CSharp
 			Console.ForegroundColor = ConsoleColor.Gray;
 		}
 
-		public static void RunP2(string[] args)
+		public static void RunP2(string[] args) // TODO D3P2
 		{
 			throw new NotImplementedException();
 		}

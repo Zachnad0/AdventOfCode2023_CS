@@ -48,7 +48,7 @@ namespace CSharp
 		}
 
 		// TODO implement this into ZUtilLib! Very useful!!!
-		private static string FindAndReplace(Dictionary<string, string> map, string text)
+		public static string FindAndReplace(Dictionary<string, string> map, string text)
 		{
 			// Iterate through line, replace "one" with "1", "five" with "5" and etcetera
 			string output = new(text);
