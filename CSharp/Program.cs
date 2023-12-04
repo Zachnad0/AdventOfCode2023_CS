@@ -11,7 +11,10 @@ namespace CSharp
 		public static void Main(string[] args)
 		{
 			//Day1.RunP1(args);
-			Day1.RunP2(args);
+			//Day1.RunP2(args);
+			//Day2.RunP1(args);
+			//Day2.RunP2(args);
+			Day3.RunP1(args);
 		}
 	}
 }
