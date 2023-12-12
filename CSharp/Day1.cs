@@ -47,7 +47,7 @@ namespace CSharp
 			Console.ForegroundColor = ConsoleColor.Gray;
 		}
 
-		// TODO implement this into ZUtilLib! Very useful!!!
+		// NOT USEFUL considering the fact that it literally exists already built-in
 		public static string FindAndReplace(Dictionary<string, string> map, string text)
 		{
 			// Iterate through line, replace "one" with "1", "five" with "5" and etcetera
