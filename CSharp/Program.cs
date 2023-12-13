@@ -28,6 +28,7 @@ namespace CSharp
 			//Day8.RunP2(args);
 			//Day9.RunP1(args);
 			//Day9.RunP2(args);
+			Day10.RunP1(args);
 
 			Console.ReadKey();
 		}
