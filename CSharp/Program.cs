@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharp
 {
@@ -28,7 +24,8 @@ namespace CSharp
 			//Day8.RunP2(args);
 			//Day9.RunP1(args);
 			//Day9.RunP2(args);
-			Day10.RunP1(args);
+			//Day10.RunP1(args);
+			Day10.RunP2(args);
 
 			Console.ReadKey();
 		}
