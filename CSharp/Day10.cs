@@ -173,7 +173,7 @@ namespace CSharp
 			}
 
 			// For each row, switch between out and in and determine total ground tiles enclosed horizontally
-			List<Vector2> horizontallyEnclosed = new();
+			List<Vector2> horizontallyEnclosed = new(); // TODO Day 10 Part 2 come back and do this real hard man
 			for (int y = 0; y < mHeight; y++)
 			{
 				int? openingX = null, closingX = null;
