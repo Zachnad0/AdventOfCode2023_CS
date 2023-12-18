@@ -71,7 +71,7 @@ namespace CSharp
 			Console.WriteLine($"\n\t\tNumber of total possible arrangements: {sumOfPossibleArrangements}");
 		}
 
-		public static void RunP2(string[] args)
+		public static void RunP2(string[] args) // TODO Day 8 Part 2 come back and find a non-brute force way?
 		{
 			string[] lines = File.ReadAllLines("../input12.txt");
 

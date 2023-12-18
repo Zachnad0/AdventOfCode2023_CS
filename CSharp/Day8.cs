@@ -95,7 +95,7 @@ namespace CSharp
 			Console.WriteLine($"Path Count: {lCM:F}");
 		}
 
-		private static double LCM(double[] values) // TODO add to ZUtilLibs
+		private static double LCM(double[] values) // TODO add to ZUtilLib
 		{
 			var sortedVals = values.OrderByDescending(v => v).ToArray();
 

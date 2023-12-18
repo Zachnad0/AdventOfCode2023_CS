@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace CSharp
 {
@@ -30,9 +31,32 @@ namespace CSharp
 			//Day11.RunP2(args);
 			//Day12.RunP1(args);
 			//Day12.RunP2(args);
-			Day13.RunP1(args);
+			//Day13.RunP1(args);
+			//Day13.RunP2(args); // TODO Days 14 up to and including 18
+
+			Day19.RunP1(args);
 
 			Console.ReadKey();
+		}
+	}
+
+	public static class UsefulAoCUtils
+	{
+		// TODO add to ZUtilLib
+		public static char[][] ToMatrix(this string[] lines)
+		{
+			int mWidth = lines[0].Length, mHeight = lines.Length;
+			char[][] outMatrix = new char[mWidth][];
+			for (int x = 0; x < mWidth; x++)
+			{
+				outMatrix[x] = new char[mHeight];
+				for (int y = 0; y < mHeight; y++)
+				{
+					outMatrix[x][y] = lines[y][x];
+				}
+			}
+
+			return outMatrix;
 		}
 	}
 }
