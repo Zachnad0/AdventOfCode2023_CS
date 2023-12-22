@@ -61,7 +61,8 @@ namespace CSharp
 			string[] lines = File.ReadAllLines("../input14.txt");
 			// Remove if not matrix:
 			char[][] rocksMatrix = lines.ToMatrix();
-			//DateTime startTime = DateTime.Now;
+
+			// Determine starting rock positions
 
 			List<char[][]> prevMatrices = new();
 			for (int cycleNum = 0; cycleNum < CYCLE_COUNT; cycleNum++)
@@ -105,23 +106,9 @@ namespace CSharp
 					rocksMatrix = rocksMatrix.RotateMatrix();
 				}
 
-				bool isAlreadyIncl = false;
-				Parallel.ForEach(prevMatrices, (m, ls) => // TODO Day 14 Part 2 maybe LCM of each rock's mini cycle???
-				{
-					if (rocksMatrix.Identical(m))
-					{
-						isAlreadyIncl = true;
-						ls.Stop();
-					}
-				});
-
-				if (isAlreadyIncl)
-					break;
-				prevMatrices.Add(rocksMatrix);
+				// If a starting position has a rock in it, then remove the position and add the current number of steps to the steps list???
+				// TODO Day 14 Part 2 maybe come back later and do this???
 			}
-
-			//long ts = (long)(DateTime.Now - startTime).TotalSeconds;
-			//Console.WriteLine($"{CYCLE_COUNT} cycles took {ts} seconds, therefore it would take {1000000000 / CYCLE_COUNT * ts} seconds to do full.");
 
 			// Calculate load
 			long totalLoad = 0;
